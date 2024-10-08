@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'main',
     # элемент проекта 1
     # элемент проекта 2
     # элемент проекта 3
