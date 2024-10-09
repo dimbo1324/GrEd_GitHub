@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import '@xyflow/react/dist/style.css';
-import System from "./MiniMap/System.jsx";
+import System from "./Graph_v_1/System.jsx";
 
 export default function App() {
 	return (
