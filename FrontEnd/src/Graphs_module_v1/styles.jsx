@@ -16,12 +16,18 @@ export const stylesheet = [
 	{
 		selector: '.compound',
 		style: {
-			'shape': 'round-rectangle',
+		'shape': 'round-rectangle',
 			'background-opacity': 0.1,
 			'border-width': 2,
 			'border-color': '#333',
 			'padding': 10,
-			'label': 'data(id)',
+			'label': 'data(label)',  // Обязательно для отображения меток
+			'text-valign': 'center',
+			'text-halign': 'center',
+			'font-size': '14px',
+			'text-wrap': 'wrap',
+			'width': '200px',
+			'height': '150px'
 		}
 	},
 	{
