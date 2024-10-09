@@ -1,8 +1,8 @@
 import React, {useEffect, useRef} from 'react';
 import cytoscape from 'cytoscape';
 import dagre from 'cytoscape-dagre';
-import {elements} from "./elements.jsx";
-import {stylesheet} from "./styles.jsx";
+import {elements} from './elements.jsx';
+import {graphConfig} from './graphConfig.jsx';
 
 cytoscape.use(dagre);
 
@@ -14,14 +14,9 @@ export default function Functionality() {
 			const cy = cytoscape({
 				container: cyRef.current,
 				elements,
-				style: stylesheet,
-				layout: {
-					name: 'dagre',
-					rankDir: 'LR',
-					nodeDimensionsIncludeLabels: true,
-				},
+				style: graphConfig.style,
+				layout: graphConfig.layout,
 			});
-			
 			return () => cy.destroy();
 		}
 	}, []);
